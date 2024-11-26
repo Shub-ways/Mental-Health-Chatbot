@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;;
+    /* background-image: url('image.png');
+    background-size: cover; /* Cover the entire viewport */
+    /* background-position: center; Center the image */
+    margin: 0;
+}
+
+.chat-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    background-image: url('image.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    margin: 0;
+}
+
+#chat-box {
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-form {
+    /* display: flex;
+    padding: 10px; */
+    background-color: #f0f0f0; /* Light gray background for the form */
+    padding: 10px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Use flexbox for layout */
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-message {
+    background-color: #e1ffc7; /* Light green background for user messages */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Padding inside message */
+    /* display: inline-block; Only take as much width as necessary */
+    max-width: 80%; /* Limit the maximum width of user messages */
+    margin-bottom: 10px; /* Space between messages */
+    /* text-align: right; */
+    align-self: flex-end;
+
+}
+
+.bot-message {
+    /* text-align: left; */
+    /* margin: 10px 0; */
+    background-color: #25D366; /* WhatsApp green for bot messages */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Padding inside message */
+    max-width: 80%; /* Limit the maximum width of bot messages */
+    margin-bottom: 10px; /* Space between messages */
+    color: white; /* White text color for better contrast */
+    align-self: flex-start; /* Align this message to the left */
+}
+
+
+/* Navbar styling */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background for navbar */
+    width: 100%; /* Make navbar full width */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position at the top */
+    z-index: 1000; /* Ensure it stays above other elements */
+    padding: 0 16px; /* Add horizontal padding */
+}
+
+.navbar a {
+    color: #f2f2f2; /* Light text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Padding around links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 17px; /* Font size for links */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Change background on hover */
+    color: black; /* Change text color on hover */
+}
+
+.navbar a.active {
+    background-color: #04AA6D; /* Active link color */
+    color: white; /* Active link text color */
+}
+
+/* Right-aligned section inside the navbar */
+.navbar-right {
+    float: right; /* Align this section to the right */
+}
+
+.navbar-right a {
+    float: none; /* Ensure individual links do not float left */
+}
